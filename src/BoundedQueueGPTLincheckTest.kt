@@ -5,7 +5,7 @@ import org.jetbrains.kotlinx.lincheck.strategy.stress.*
 import org.junit.*
 
 class BoundedQueueGPTLincheckTest {
-    private val queue = BoundedQueueGPT<Int>(capacity = 1)
+    private val queue = BoundedQueueGPT<Int>(capacity = 2)
 
     @Operation
     fun add(item: Int) = queue.add(item)

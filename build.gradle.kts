@@ -3,7 +3,7 @@ plugins {
     java
 }
 
-group = "pldi24"
+group = "lincheck-example"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -14,7 +14,7 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation(kotlin("reflect"))
     testImplementation(kotlin("test-junit"))
-    testImplementation("org.jetbrains.kotlinx:lincheck:2.32")
+    testImplementation("org.jetbrains.kotlinx:lincheck:2.34")
 }
 
 java {
